@@ -1,6 +1,7 @@
 #pragma once
 
 #include "voxelEngine_window.hpp"
+#include "voxelEngine_pipeline.hpp"
 
 namespace voxelEngine 
 {
@@ -12,6 +13,7 @@ namespace voxelEngine
 			void run();
 
 		private:
-			VoxelEngineWindow window {WIDTH, HEIGHT, "Voxel Engine"};
+			VoxelEngineWindow window { WIDTH, HEIGHT, "Voxel Engine" };
+			VoxelEnginePipeline pipeline{ "simple_shader.vert.spv", "simple_shader.frag.spv" };
 	};
 }
