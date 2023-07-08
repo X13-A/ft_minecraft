@@ -14,6 +14,7 @@ namespace voxelEngine
 
 		private:
 			VoxelEngineWindow window { WIDTH, HEIGHT, "Voxel Engine" };
-			VoxelEnginePipeline pipeline{ "simple_shader.vert.spv", "simple_shader.frag.spv" };
+			VoxelEngineDevice voxelEngineDevice{window};
+			VoxelEnginePipeline pipeline{voxelEngineDevice, "simple_shader.vert.spv", "simple_shader.frag.spv", VoxelEnginePipeline::defaultPipelineConfigInfo(WIDTH, HEIGHT)};
 	};
 }

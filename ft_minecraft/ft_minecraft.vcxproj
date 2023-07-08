@@ -147,11 +147,13 @@
   <ItemGroup>
     <ClCompile Include="engine.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="voxelEngine_device.cpp" />
     <ClCompile Include="voxelEngine_pipeline.cpp" />
     <ClCompile Include="voxelEngine_window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="engine.hpp" />
+    <ClInclude Include="voxelEngine_device.hpp" />
     <ClInclude Include="voxelEngine_pipeline.hpp" />
     <ClInclude Include="voxelEngine_window.hpp" />
   </ItemGroup>
